@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/Contest.ico">
+
+    <!-- Style -->
+    <link href="assets/css/jetbrains.css" rel="stylesheet">
+    <link href="assets/css/jetbrains-components.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="assets/css/contest-main.css" rel="stylesheet">
+    <!-- End style -->
+</head>
+<body class="theme-dark">
+<!-- Theme change  -->
+<script src="assets/js/theme.js"></script>
+<!-- End theme change  -->
+
+<div class="page">
+    <!-- Header -->
+    <header class="d-flex flex-wrap justify-content-md-between mb-4 px-4 border-bottom">
+        <!-- Gradient -->
+        <div class="gradient" style="background: var(--gradient-4)"></div>
+        <a href="#" class="link link-default link-underline-none tb ms-2 d-flex align-items-center" >
+            <img src="assets/img/Contest.png" class="logo me-2">
+            <h6>VOYADGER CONTEST</h6>
+        </a>
+
+        <div class="text-end d-inline-flex align-items-center">
+            <a class="link link-default tb ms-3 d-inline-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-2" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg> GitHub</a>
+            <a class="link link-default tb ms-3 d-inline-flex align-items-center" href="#">Главная</a>
+            <a class="link link-default tb ms-3 d-inline-flex align-items-center" href="#">Компиляторы и ошибки</a>
+            <a class="link link-default tb ms-3 d-inline-flex align-items-center" href="#">Обзор</a>
+
+            <div class="drop-down ms-3" >
+                <a id="drop-down-btn-1" class="drop-down__button">Drop down</a>
+                <ul class="drop-down__list drop-down__list-right">
+                    <li class="drop-down__list-item" data-value="8"><h6>Профиль</h6></li>
+                    <li class="drop-down__list-delimiter"></li>
+                    <li class="drop-down__list-item" data-value="8"><a class="link link-default " href="#">Реактор тестов</a></li>
+                    <li class="drop-down__list-item" data-value="8"><a class="link link-default " href="#">Отчимтить кеш</a></li>
+                    <li class="drop-down__list-delimiter"></li>
+                    <li class="drop-down__list-item" data-value="8"><a class="link link-default " href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Body -->
+    <div class="main-panel align-items-center mt-5">
+        <h1>Описание</h1>
+        <h4 class="mt-3">Введение</h4>
+
+        <div class="content-wrapper" style="width: 70vw">
+            <div class="row">
+                <div class="col-xl-9 col-sm-6 grid-margin stretch-card">
+                    <div class="content-wrapper">
+
+                        <div class="task-info">
+                            <table class="task-info-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ограничение времени</th>
+                                        <th>Ограничение памяти</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 секунда</td>
+                                        <td>256 МБ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <br>
+
+                        <div class="MarkDownWindow" id="MarkDownWindow"><h1>Описание</h1>
+                            <p>Здесь описывается задание в формате MarkDown и формулы в формате LaTeX</p>
+                            <hr>
+                            <h1>Типография</h1>
+                            <p><em>Курсивный текст</em></p>
+                            <p><strong>Жирный текст</strong></p>
+                            <p><em><strong>Жирный + курсивный текст</strong></em></p>
+                            <p><s>Зачёркнутый текст</s></p>
+                            <p><strong><s>Жирный, зачёркнутый текст</s></strong></p>
+                            <h1>H1</h1>
+                            <h2>H2</h2>
+                            <h3>H3</h3>
+                            <h4>H4</h4>
+                            <h5>H5</h5>
+                            <h6>H6</h6>
+                            <hr>
+                            <h2>Код</h2>
+                            <p>Можно выделять <code>отдельные</code> слова</p>
+                            <p>Или вставлять части кода</p>
+                            <pre><code class="language-python"># Python
+a, b = map(int, input().split())
+print(a + b)
+</code></pre>
+                            <hr>
+                            <h2>Таблицы</h2>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th style="text-align:left">#</th>
+                                    <th style="text-align:center">Город</th>
+                                    <th style="text-align:right">человек</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="text-align:left">1</td>
+                                    <td style="text-align:center">Москва</td>
+                                    <td style="text-align:right">13 010 112</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left">2</td>
+                                    <td style="text-align:center">Санкт-Петербург</td>
+                                    <td style="text-align:right">5 601 911</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left">3</td>
+                                    <td style="text-align:center">Новосибирск</td>
+                                    <td style="text-align:right">1 633 595</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left">4</td>
+                                    <td style="text-align:center">Екатеринбург</td>
+                                    <td style="text-align:right">1 588 665</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <h2>Картинки</h2>
+                            <p><img src="https://sun9-10.userapi.com/impg/TQsEbfb5EXFnt-oFzGHf5FgZswuf2Cr_4ODvLw/rIegWoduBNE.jpg?size=500x500&amp;quality=96&amp;sign=dc2a80d8d4f7447b00f943a08935c17c&amp;type=album" alt="img"></p>
+                            <h6><a href="/assets/img/Contest.png">или ссылки</a></h6>
+                            <hr>
+                            <h2>Формулы (LaTeX)</h2>
+                            <h3><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" display="true" role="presentation" tabindex="0" ctxtmenu_counter="0" style="font-size: 119.1%; position: relative;"><mjx-math display="true" class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c65"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c69"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c3A0"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mi>e</mi><mrow><mi>i</mi><mi mathvariant="normal">Π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container></h3>
+                            <hr>
+                            <p>Описание хранится в базе данных MySQL в типе <strong>Text</strong> - 65,535 (2^16 − 1) байт</p>
+                            <p>Слишком большое описание может не вместиться в базу данных</p>
+                        </div>
+
+                        <br>
+
+
+                        <h1>Решение</h1>
+                        <div class="select select-large mt-3">
+                            <button id="select-btn-2" class="select__button">select</button>
+                            <ul class="select__list">
+                                <li class="select__list-item" data-value="python-3.11">python - 3.11</li>
+                                <li class="select__list-item" data-value="c++-13.1">c++ - 3.1</li>
+                                <li class="select__list-item" data-value="java-17">java - 17</li>
+                            </ul>
+                            <input value="" type="hidden" name="language" class="select__input">
+                        </div>
+
+                        <br><br>
+
+                        <div class="card">
+                            <textarea class="editor-area" id="editor-area" style="display: none;"></textarea><div class="CodeMirror cm-s-default" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -10px; border-right-width: 40px; min-height: 29px; min-width: 7px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 21px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 40px; width: 1px; border-bottom: 0px solid transparent; top: 29px;"></div><div class="CodeMirror-gutters" style="height: 69px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+                        </div>
+                        <br>
+
+                        <button onclick="sendCode('kx8QBEUlPto69f0sd7rIeZ3fIl9eJ4cdpsV859PE', 'http://localhost:8000/send_solution', 1, 1)" class="btn btn-mono" style="padding: 10px 20px;">Отправить</button>
+
+                        <br><br>
+
+                        <h4>Предыдущие решения</h4>
+
+
+                        <br>
+                        <p style="color:grey">Здесь будет список решений</p>
+                    </div>
+                </div>
+
+                <!-- Tasks list -->
+                <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col-xl-12 grid-margin">
+                                <div class="card text-center align-items-center circle-background p-3" hovercolor="#55f2" style="background: none">
+                                    <h5 class="" style="font-weight: 400; padding: 10px">Выполнено: 0 из 5</h5>
+                                    <div class="tasks-box">
+                                        <!-- Если текущие задание -->
+                                        <div class="task-item">
+                                            <div class="icon icon-box-primary">
+                                                <span class="mdi mdi-arrow-top-right icon-item">1</span>
+                                            </div>
+                                        </div>
+                                        <!-- Если не текущие задание -->
+
+
+                                        <a href="/tasks/2" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">2</span>
+                                            </div>
+                                        </a>
+
+
+                                        <a href="/tasks/9" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">3</span>
+                                            </div>
+                                        </a>
+
+
+                                        <a href="/tasks/18" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">4</span>
+                                            </div>
+                                        </a>
+
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/tasks/29" class="task-item">
+                                            <div class="icon icon-box-light">
+                                                <span class="mdi mdi-arrow-top-right icon-item">5</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-3"></div>
+                                    <a href="http://localhost:8000/info" class="link">Компиляторы и значения ошибок</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End tasks list -->
+            </div>
+        </div>
+    </div>
+    <!-- End body -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <!-- Copyright -->
+        <div class="text-end d-inline-flex align-items-center p-4">
+            <span class="tb">© 2023 Все права защищены.</span>
+            <a class="link tb ms-3 d-inline-flex align-items-center" href="https://github.com/Voyadger-Odin" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-2" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+                <span style="margin-left: 5px">Voyadger-Odin</span>
+            </a>
+            <a class="link tb ms-3 d-inline-flex align-items-center" href="https://t.me/rosetomorrow" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
+                </svg>
+                <span style="margin-left: 5px">rosetomorrow</span>
+            </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End footer -->
+</div>
+
+
+<!-- Scripts -->
+<script src="assets/js/jetbrains.js"></script>
+<!-- End scripts -->
+</body>
+</html>

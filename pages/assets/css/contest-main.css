@@ -1,0 +1,126 @@
+
+
+.task-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.75rem 1.5625rem;
+}
+
+.task-card-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.tasks-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Task info */
+.task-info {
+    background: var(--gray-13);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.task-info-table {
+    width: 100%;
+}
+.task-info-table>thead>tr>th{
+    text-align: start;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.task-info-table>tbody>tr>td{
+    text-align: start;
+    font-size: 11pt;
+    padding-top: 8px;
+}
+
+    /* Dark theme */
+    .theme-dark>* .task-info {
+        background: var(--gray-2);
+    }
+    /* End dark theme */
+/* End task info */
+
+
+/* Tasks box */
+.tasks-box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: calc((40px + 10px) * 4);
+}
+.task-item {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-decoration: none !important;
+}
+.icon.icon-box-light {
+    width: 40px;
+    height: 37px;
+    background: var(--glass);
+    border-radius: 7px;
+    color: var(--gray-1);
+}
+.icon.icon-box-primary {
+    width: 40px;
+    height: 37px;
+    background: rgba(0, 144, 231, 0.11);
+    border-radius: 7px;
+    color: rgba(0, 144, 231, 1);
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon .icon-item {
+    font-size: 20px;
+}
+
+    /* Dark theme */
+    .theme-dark>* .icon.icon-box-light {
+        background: var(--glass);
+        color: var(--gray-12);
+    }
+    .theme-dark>* .icon.icon-box-primary {
+        background: var(--blue-1);
+        color: var(--blue-6);
+    }
+    /* End dark theme */
+/* End tasks box */
+
+.display-4 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+
+/* Tasks editor */
+.tasks-groups-list{
+    background: var(--gray-13);
+    border-radius: 8px;
+}
+
+    /* Dark theme */
+    .theme-dark>* .tasks-groups-list {
+        background: var(--gray-2);
+    }
+    /* End dark theme */
+/* End tasks editor */

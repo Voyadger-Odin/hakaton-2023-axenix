@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+<canvas id="stock_canvas"></canvas>
+
+<script>
+
+    let stock_canvas = document.querySelector('#stock_canvas')
+    console.log(stock_canvas)
+    let context = stock_canvas.getContext('2d')
+
+    function line(context, x, y, x2, y2) {
+        context.beginPath()
+        context.moveTo(x, y)
+        context.lineTo(x2, y2)
+        context.stroke()
+    }
+
+    line(context, 0, 0, 100, 200)
+
+    context.moveTo(0, 0)
+    context.rect(20, 20, 40, 60)
+    context.stroke()
+
+
+</script>
+
+</body>
+</html>
