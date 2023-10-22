@@ -91,7 +91,6 @@ class Controller extends BaseController
             'compress' => true,
             'Attachment' => false,
         ]);
-
         return view('pdf.analytics_pdf', [
             'forklift_id' => $forklift_id
         ]);

@@ -95,7 +95,7 @@ function drawStock(x, y) {
 
 
 // Получение формы склада
-let urlGetStock = 'http://localhost:8100/api/stock'
+let urlGetStock = 'http://' + SERVER_IP + ':8100/api/stock'
 httpRequest(urlGetStock, 'GET', null, false, function (response) {
     stock_data = JSON.parse(response.response)
 
@@ -205,7 +205,7 @@ function loop(){
 
 // Медленный цикл (для запросов на сервер)
 function lazy_loop(){
-    const urlGetForklifts = 'http://localhost:8100/api/forklifts/' + stock_id
+    const urlGetForklifts = 'http://' + SERVER_IP + ':8100/api/forklifts/' + stock_id
     httpRequest(urlGetForklifts, 'GET', null, false, function (response) {
         const forklifts_data = JSON.parse(response.response)
         // Перерисовка таблицы

@@ -1,3 +1,7 @@
+<?php
+$SERVER_IP = '192.168.0.1'
+?>
+
 @extends('layout.main')
 
 @section('body')
@@ -52,7 +56,7 @@
 
                     @if(isset($_GET['date-from']) and isset($_GET['date-to']))
                         <?php
-                            $url = 'http://192.168.77.104:8100:8100/api/analytics/' . $forklift_id . '?date-from=' . $_GET['date-from'] . '&date-to=' . $_GET['date-to'];
+                            $url = 'http://' . $SERVER_IP . ':8100:8100/api/analytics/' . $forklift_id . '?date-from=' . $_GET['date-from'] . '&date-to=' . $_GET['date-to'];
                             $forklifter_analytic = json_decode(file_get_contents($url));
                         ?>
                         <table class="table table-hover table-cell-padding-larg">

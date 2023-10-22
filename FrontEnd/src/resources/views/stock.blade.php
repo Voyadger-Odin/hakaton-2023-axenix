@@ -2,7 +2,7 @@
 
 @section('body')
     <?php
-        $url = 'http://192.168.77.104:8100/api/warehouses';
+        $url = 'http://' . GetServerIp() . ':8100/api/warehouses';
         $warehouses = json_decode(file_get_contents($url));
     ?>
     <div class="content-wrapper">

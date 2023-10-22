@@ -89,6 +89,9 @@
 
 
 <!-- Scripts -->
+<script>
+    const SERVER_IP = '{{GetServerIp()}}'
+</script>
 <script src="{{asset('assets/js/jetbrains.js')}}"></script>
 @yield('scripts')
 <!-- End scripts -->
