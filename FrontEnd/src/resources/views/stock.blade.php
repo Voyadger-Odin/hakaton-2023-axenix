@@ -2,8 +2,7 @@
 
 @section('body')
     <?php
-        $url = 'http://' . GetServerIp() . ':8100/api/warehouses';
-        $warehouses = json_decode(file_get_contents($url));
+        $warehouses = getWarehouses();
     ?>
     <div class="content-wrapper">
         <div class="row">
@@ -12,14 +11,14 @@
                 <br>
                 <div style="width: 100%; height: 80vh" id="stock_canvas_parent">
                     <ul class="tabs">
-                        @foreach($warehouses as $warehouse)
+                        @foreach($warehouses as $warehouse => $warehouse_cities)
                             <li
-                                @if($warehouse->warehouse == $stock_id)
+                                @if($warehouse == $stock_id)
                                     class="tab-selected"
                                 @endif
-                                onclick="openStock('{{route('stock', $warehouse->warehouse)}}')"
+                                onclick="openStock('{{route('stock', $warehouse)}}')"
                             >
-                                Склад {{$warehouse->warehouse}}
+                                {{$warehouse_cities}}
                             </li>
                         @endforeach
                     </ul>

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('forklifts', function (Blueprint $table) {
             $table->id();
+            $table->integer('forklift_id')->unique();
             $table->integer('warehouse');
             $table->string('status')->default('wait');
             $table->date('last_to')->useCurrent();

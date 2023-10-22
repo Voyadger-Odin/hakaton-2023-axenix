@@ -14,7 +14,8 @@ $SERVER_IP = '192.168.0.1'
                 <table class="table table-hover">
                     <thead>
                     <tr>
-                        <th>Номер</th>
+                        <th>Погрузчик</th>
+                        <th>Склад</th>
                         <th>Статус</th>
                         <th>Заказ</th>
                     </tr>

@@ -16,6 +16,8 @@ class Forklift extends Model
      */
     protected $fillable = [
         'id',
+        'forklift_id',
+        'warehouse',
         'status',
         'last_to',
         'position',

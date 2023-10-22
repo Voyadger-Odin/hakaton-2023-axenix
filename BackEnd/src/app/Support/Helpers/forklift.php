@@ -12,11 +12,14 @@ function getForklift($forklift_id): Forklift | null
 function createForkliftIfNotExist($id, $warehouse): Forklift
 {
     $forklift = Forklift::select()
-        ->where('id', '=', $id)
+        ->where([
+            ['forklift_id', '=', $id],
+            ['warehouse', '=', $warehouse],
+        ])
         ->first();
     if ($forklift == null){
         $forklift = new Forklift;
-        $forklift->id = $id;
+        $forklift->forklift_id = $id;
         $forklift->warehouse = $warehouse;
         $forklift->last_to = date('Y-m-d');
         $forklift->save();
@@ -63,4 +66,15 @@ function getStockJson()
 function getStockObject()
 {
     return json_decode(getStockJson());
+}
+
+function getCities(){
+    return [
+        "Rostov-on-Don",
+        "Moscow",
+        "Krasnodar",
+        "Tver",
+        "Saint Petersburg",
+        "Almaty"
+    ];
 }

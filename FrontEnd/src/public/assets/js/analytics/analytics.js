@@ -32,7 +32,7 @@ function setTableForklifters(forklifts_data){
         }else if (forklifter['status'] === 'wait'){
             forklifter_status = 'Ожидаю заказ'
         }
-        result_table += '<tr onclick="selectForklift(' + forklifter['id'] + ')"><td>' + forklifter['id'] + '</td><td>' + forklifter_status + '</td><td>' + ((forklifter['task_id']) ? forklifter['task_id'] : '-') + '</td></tr>'
+        result_table += '<tr onclick="selectForklift(' + forklifter['id'] + ')"><td>' + forklifter['forklift_id'] + '</td><td>' + forklifter['warehouse'] + '</td><td>' + forklifter_status + '</td><td>' + ((forklifter['task_id']) ? forklifter['task_id'] : '-') + '</td></tr>'
     })
     tableForkliftersBody.innerHTML = result_table
 }

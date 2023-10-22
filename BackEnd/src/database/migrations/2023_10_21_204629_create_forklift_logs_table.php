@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('forklift_logs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('forklift_id');
-            $table->foreign('forklift_id')->references('id')->on('forklifts')->onDelete('cascade');
             $table->string('status');
             $table->integer('length');
             $table->timestamps();

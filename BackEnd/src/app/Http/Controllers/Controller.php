@@ -18,9 +18,13 @@ class Controller extends BaseController
     {
         $warehouses = Forklift::select('warehouse')
             ->groupBy('warehouse')
-            ->orderBy('warehouse')
             ->get();
-        return response(json_encode($warehouses), 200)
+
+        $result = [];
+        foreach ($warehouses as $warehouse){
+            $result[$warehouse->warehouse] = getCities()[$warehouse->warehouse];
+        }
+        return response(json_encode($result), 200)
             ->header('Content-Type', 'text/json');
     }
 
